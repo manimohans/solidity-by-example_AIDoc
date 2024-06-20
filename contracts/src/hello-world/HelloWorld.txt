@@ -1,0 +1,23 @@
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract HelloWorld {
+    string public greet = "Hello World!";
+}
+```
+
+**Explanation:**
+
+Just like Python modules can have variables, Solidity contracts can have state variables. In this case, `greet` is a state variable of type `string` initialized to "Hello World!".
+
+- **`// SPDX-License-Identifier: MIT`**: This comment specifies the license for the code.
+
+- **`pragma solidity ^0.8.17;`**: This line specifies that the code is written for Solidity version 0.8.17 or later.
+
+- **`contract HelloWorld { ... }`**: This defines a contract named `HelloWorld`. Contracts in Solidity are like classes in Python—they encapsulate data and functions.
+
+- **`string public greet = "Hello World!";`**: This line declares a public state variable named `greet`. It's similar to a class attribute in Python.
+    - `string`: The data type is `string`, which is similar to Python's `str`.
+    - `public`: This keyword makes the variable accessible from outside the contract. It automatically generates a getter function for this variable.
+    - `"Hello World!"`: The variable is initialized with the string "Hello World!".
